@@ -15,7 +15,15 @@ public:
 { return ""; /* TODO */ }
     string createLink(const string& url, const string& text) 
 { return ""; /* TODO */ }
-    string createList(const vector<string>& items, bool ordered) 
-{ return ""; /* TODO */ }
-};
+    // Método para una lista
+    createList(items, ordered) {
+        const listTag = ordered ? 'ol' : 'ul';
+        let listHTML = <${listTag}>\n;
+        items.forEach(item => {
+            listHTML += `  <li>${item}</li>\n`;
+        });
+        listHTML += </${listTag}>\n;
+        return listHTML;
+    }
+
 
