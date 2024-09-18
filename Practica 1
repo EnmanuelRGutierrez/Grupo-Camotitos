@@ -5,8 +5,10 @@ using namespace std;
 
 class HTMLGenerator {
 public:
-    string createTitle(const string& title) 
-{ return ""; /* TODO */ }
+        // Método para crear el título
+    createTitle(title) {
+        return `<title>${title}</title>\n`;
+    }
     string createHeader(const string& header, int level) 
 { return ""; /* TODO */ }
     string createParagraph(const string& text) 
