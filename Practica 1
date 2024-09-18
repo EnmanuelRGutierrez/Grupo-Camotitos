@@ -9,8 +9,13 @@ public:
     createTitle(title) {
         return `<title>${title}</title>\n`;
     }
-    string createHeader(const string& header, int level) 
-{ return ""; /* TODO */ }
+        // Método para un encabezado
+    createHeader(header, level) {
+        if (level < 1 || level > 6) {
+            return ''; // Niveles de encabezado válidos son del 1 al 6
+        }
+        return <h${level}>${header}</h${level}>\n;
+    }
     string createParagraph(const string& text) 
 { return ""; /* TODO */ }
     string createLink(const string& url, const string& text) 
