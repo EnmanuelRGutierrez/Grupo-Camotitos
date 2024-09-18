@@ -16,6 +16,11 @@ public:
         }
         return <h${level}>${header}</h${level}>\n;
     }
+  // Método para un enlace
+    createLink(url, text) {
+        return `<a href="${url}">${text}</a>\n`;
+    }
+
     string createParagraph(const string& text) 
 { return ""; /* TODO */ }
     string createLink(const string& url, const string& text) 
